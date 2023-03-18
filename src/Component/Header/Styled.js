@@ -13,12 +13,6 @@ display: flex;
     padding: 0 15px;
     border-radius: 4px;
 `
-export const Icon = styled.div`
-display: none;
-@(max-width: 991px) {
-    display: flex;
-}
-`
 export const Links = styled.ul`
 display: flex;
 a {
@@ -29,4 +23,12 @@ a {
 a.active {
     color:#ff5722
 }
+`
+export const ToggleIcon = styled.button`
+padding: 10px;
+font-size: 20px;
+background: none;
+border: none;
+color: #fff;
+cursor: pointer;
 `

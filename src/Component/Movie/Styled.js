@@ -8,7 +8,8 @@ export const Container = styled.div`
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 gap: 50px;
-margin: 10px 15px;
+margin: 10px 15px 0;
+padding: 0 0 20px
 `
 export const Items = styled.div`
 background-color: rgb(255 255 255 / 12%);
@@ -54,15 +55,8 @@ border-radius: 4px;
 color: #fff;
 font-weight: bold;
 `
-export const Date = styled.span`
-position: absolute;
-top: 10px;
-left: 10px;
-background: #f44336;
-padding: 2px 5px;
-border-radius: 4px;
-color: #fff;
-font-weight: bold;
+export const Love = styled.span`
+
 `
 export const Button = styled.button`
 padding: 10px;

@@ -1,0 +1,70 @@
+.header .icon {
+    display: none;
+    padding: 20px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+@media(max-width: 767px) {
+    .header .icon {
+        display: flex;
+        align-items: center;
+    }
+}
+@media (max-width: 767px) {
+    .header .links {
+        display: none;
+    }
+}
+.header-mobile {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .9)!important;
+    transition: all 0.6s linear;
+    z-index: 999999;
+}
+.header-mobile ul {
+    position: absolute;
+    display: block;
+    width: 250px;
+    background: #fff;
+    height: 100vh;
+    animation: head-animate 0.4s linear;
+}
+.header-mobile ul a {
+    display: block;
+    color: #000 !important;
+    padding: 15px 0;
+} 
+.header-mobile ul a {
+    text-decoration: none;
+}
+.header-mobile ul a:hover {
+    color: #D84315 !important;  
+    transition: all 0.4s linear;
+}
+.header-mobile ul a.active {
+    color: #D84315 !important;
+}
+.header-mobile .close-button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.4s linear;
+}
+.header-mobile .close-button:hover {
+    color: #BF360C;
+}
+
+@keyframe head-animate {
+    0% {
+        left: -250px;
+    },
+    100% {
+        left: 250px
+    }
+}

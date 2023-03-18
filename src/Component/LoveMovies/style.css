@@ -1,0 +1,32 @@
+.love .container {
+    margin: 0 15px;
+}
+.love .container > div {
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 4px;
+}
+.love .container img {
+    width: 300px;
+    border-radius: 4px;
+}
+@media (max-width: 767px) {
+    .love .container img {
+        width: 40%;
+    }
+}
+.love .container .info h5 {
+    font-size: 16px
+}
+@media (max-width: 767px) {
+    .love .container .info h5 {
+        font-size: 14px
+    }
+}
+.love .container .remove {
+    cursor: pointer
+}

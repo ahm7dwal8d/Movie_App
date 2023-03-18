@@ -1,0 +1,17 @@
+.footer {
+    padding: 0 0 10px;
+    color: #fff;
+}
+.footer .container {
+    background: #060a1e;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    padding: 20px;
+    margin: 0 15px;
+    border-radius: 4px
+}
+.footer span {
+    margin-left: 5px;
+    color: rgb(255, 87, 34)
+}

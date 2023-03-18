@@ -1,0 +1,27 @@
+.light,
+.dark {
+    transition: all .6s linear;
+}
+.light .header > div,
+.light .form {
+    background: #060a1e;
+}
+.light .header > div a:not(.active) {
+    color: rgba(255, 255, 255, 0.62)
+}
+.light .item {
+    background: #060a1e;
+}
+.dark {
+    background: #060a1e
+}
+.dark .header,
+.dark .form  {
+    background:#ffffff14
+}
+.dark .love .container {
+    color: #fff
+}
+.dark .footer .container {
+    background: rgba(255, 255, 255, 0.08)
+}

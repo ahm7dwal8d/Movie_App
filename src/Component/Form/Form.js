@@ -16,7 +16,7 @@ const inputStyle = {
 
 function Form(props) {
     return (
-        <FormDiv>
+        <FormDiv className="form">
             <form style={formStyle} onSubmit={props.handleSubmit}>
                 <input type="search" onChange={props.value} style={inputStyle} />
                 <Button type="submit">search</Button>

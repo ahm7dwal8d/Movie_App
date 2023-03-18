@@ -1,6 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
+import { MoviesContext } from "../../Context/MoviesContext/MoviesContaxt";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import axios from "axios";
 import { MoviesDiv, Container, Img, Items, Heading, Info, Rate, Date, Button } from "./Styled";
+import "./style.css"
+
 
 function Movies() {
     const [state, setState] = useState([]);
@@ -21,6 +26,8 @@ function Movies() {
             behavior: "smooth"
         })
     }
+    const movieContext = useContext(MoviesContext);
+    const { addToLove } = movieContext;
     return (
         <MoviesDiv className="Movies">
             <Container className="container">
@@ -29,9 +36,12 @@ function Movies() {
                         <Items className="item" key={item.id}>
                             <Img src={IMG_PATH + item.backdrop_path} alt='' />
                             <Heading>{item.original_title}</Heading>
-                            <Info>{item.overview}</Info>
                             <Rate>{item.vote_average}</Rate>
-                            <Date>{item.release_date}</Date>
+                            <span
+                                className="love-btn"
+                                onClick={() => addToLove(item)}>
+                                <FontAwesomeIcon icon={faHeart} />
+                            </span>
                         </Items>
                     )
                 })}
